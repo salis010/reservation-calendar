@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { HeaderDay } from './header-day'
-import { Day } from './day/day'
+import { HeaderDay } from '../header-day'
+import { Day } from '../day/day'
 
 const CalendarGrid = styled.div`
     display: grid;
@@ -12,18 +12,10 @@ const CalendarGrid = styled.div`
 
 const dayNames = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat']
 
-const getMonthDays = n => {
-    const days = []
-
-    for(let i = 1; i <= n; i++) {
-        days.push(<Day key={i} date={i} />)
-    }
-
-    return days
-}
-
-export const Calendar = () => 
+export const Calendar = ({ days }) => 
     <CalendarGrid>
         {dayNames.map(day => <HeaderDay key={day} dayName={day} />)}
-        {getMonthDays(30)}
+        {days.map(day =>
+            <Day key={day.date} date={day.date} />
+        )}
     </CalendarGrid>
