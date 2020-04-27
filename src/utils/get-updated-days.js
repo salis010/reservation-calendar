@@ -13,6 +13,6 @@ export const getUpdatedDays = (days, date, reservationId) => {
         }
     })
 
-    return { updatedDays, nextReservation, }
+    return { updatedDays, nextReservation }
 
 }

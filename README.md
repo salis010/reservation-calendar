@@ -1,4 +1,3 @@
 - make responsive
-- Jest
 - Cypress
 - Proptypes
