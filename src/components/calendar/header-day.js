@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 
@@ -20,3 +21,7 @@ export const HeaderDay = ({ dayName }) =>
     <HeaderDayWrapper>
         <WeekDay>{dayName}</WeekDay>
     </HeaderDayWrapper>
+
+HeaderDay.propTypes = {
+    dayName: PropTypes.string.isRequired,
+}

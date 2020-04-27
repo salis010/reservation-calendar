@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 
@@ -41,3 +42,8 @@ export const Day = ({ day, reserveDay }) =>
             </Reserved>
         }
     </DayWrapper>
+
+Day.propTypes = {
+    day: PropTypes.object.isRequired,
+    reserveDay: PropTypes.func.isRequired,
+}

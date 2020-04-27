@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import menu from '../../images/menu.png'
 
@@ -17,3 +18,6 @@ export const Header = ({ setShowMenu }) =>
         <Img onClick={setShowMenu} src={menu} alt='Menu' />
     </HeaderWrapper>
     
+Header.propTypes = {
+    setShowMenu: PropTypes.func.isRequired,
+}

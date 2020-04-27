@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 
@@ -15,3 +16,7 @@ const BlankWrapper = styled.div`
 
 export const Blank = ({ setShowMenu }) => 
     <BlankWrapper onClick={setShowMenu} />
+
+Blank.propTypes = {
+    setShowMenu: PropTypes.func.isRequired,
+}
