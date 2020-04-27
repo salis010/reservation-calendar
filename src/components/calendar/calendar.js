@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { HeaderDay } from '../header-day'
-import { Day } from '../day/index'
+import { HeaderDay } from './header-day'
+import { Day } from './day/index'
+
 
 const CalendarGrid = styled.div`
     display: grid;
