@@ -1,1 +1,1 @@
-export const RESERVE = 'RESERVE'
+export const RESERVE_DAY = 'RESERVE_DAY'

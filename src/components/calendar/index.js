@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { Calendar as Component } from './calendar'
 
-export const mapStateToProps = state => ({
+    export const mapStateToProps = state => ({
     days: state.days,
 })
 

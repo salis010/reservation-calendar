@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { HeaderDay } from '../header-day'
-import { Day } from '../day/day'
+import { Day } from '../day/index'
 
 const CalendarGrid = styled.div`
     display: grid;
@@ -16,6 +16,6 @@ export const Calendar = ({ days }) =>
     <CalendarGrid>
         {dayNames.map(day => <HeaderDay key={day} dayName={day} />)}
         {days.map(day =>
-            <Day key={day.date} date={day.date} />
+            <Day key={day.date} day={day} />
         )}
     </CalendarGrid>
