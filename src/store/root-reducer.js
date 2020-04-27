@@ -1,4 +1,4 @@
-import { RESERVE_DAY, SET_SHOW_MENU } from './action-types'
+import { RESERVE_DAY, SET_SHOW_MENU, SET_SHOW_RESERVATIONS_LIST } from './action-types'
 import { generateDays } from '../utils/generate-days'
 import { getUpdatedDays } from '../utils/get-updated-days'
 
@@ -7,6 +7,7 @@ const initialState = {
     days: generateDays(30),
     nextReservation: 1,
     isShowMenu: false,
+    isShowReservationsList: false,
 }
 
 export const rootReducer = (state = initialState, action) => {
@@ -22,8 +23,10 @@ export const rootReducer = (state = initialState, action) => {
             }
 
         case SET_SHOW_MENU:
-            console.log('here', action.payload)
             return { ...state, isShowMenu: action.payload }
+
+        case SET_SHOW_RESERVATIONS_LIST:
+            return { ...state, isShowReservationsList: action.payload }
 
         default:
             return state

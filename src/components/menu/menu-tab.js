@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { MenuItem } from './menu-item'
+import { MenuItem } from './menu-item/index'
 import { MenuHeader } from './menu-header/index'
 
 

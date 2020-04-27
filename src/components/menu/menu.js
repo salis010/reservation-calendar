@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MenuTab } from './menu-tab'
-import { Blank } from './blank/blank'
+import { Blank } from './blank/index'
 
 
 const MenuWrapper = styled.div`
