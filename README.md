@@ -1,4 +1,3 @@
-- The reservations should be displayed according to their date?
 - make responsive
 - Jest
 - Cypress

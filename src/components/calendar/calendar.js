@@ -11,7 +11,7 @@ const CalendarGrid = styled.div`
     align-items: start;
 `
 
-const dayNames = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat']
+const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 export const Calendar = ({ days }) => 
     <CalendarGrid>

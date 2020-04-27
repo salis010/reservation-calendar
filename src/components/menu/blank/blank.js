@@ -13,5 +13,5 @@ const BlankWrapper = styled.div`
     z-index: 2;
 `
 
-export const Blank = () => 
-    <BlankWrapper />
+export const Blank = ({ setShowMenu }) => 
+    <BlankWrapper onClick={setShowMenu} />
