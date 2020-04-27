@@ -1,3 +1,3 @@
-import { RESERVE } from './action-types'
+import { RESERVE_DAY } from './action-types'
 
-export const reserve = day => ({ type: RESERVE, payload, day })
+export const reserveDay = day => ({ type: RESERVE_DAY, payload: day })

@@ -6,6 +6,7 @@ export const generateDays = n => {
         days.push({
             date: i,
             reserved: false,
+            reservationId: '',
         })
     }
 
