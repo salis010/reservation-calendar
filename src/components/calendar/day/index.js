@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { Day as Component } from './day'
-import { reserveDay } from '../../store/actions'
+import { reserveDay } from '../../../store/actions'
 
 
 const mapDispatchToProps = dispatch => ({
