@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { HeaderDay } from './header-day'
 import { Day } from './day/index'
@@ -20,3 +21,7 @@ export const Calendar = ({ days }) =>
             <Day key={day.date} day={day} />
         )}
     </CalendarGrid>
+
+Calendar.propTypes = {
+    days: PropTypes.array.isRequired,
+}

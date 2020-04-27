@@ -1,3 +1,2 @@
 - make responsive
 - Cypress
-- Proptypes

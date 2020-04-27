@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 
@@ -14,3 +15,8 @@ export const MenuItem = ({ menuItem, setShowReservationsList }) =>
     <MenuItemP onClick={setShowReservationsList}>
         {menuItem.text}
     </MenuItemP>
+
+MenuItem.propTypes = {
+    menuItem: PropTypes.object.isRequired,
+    setShowReservationsList: PropTypes.func.isRequired,
+}

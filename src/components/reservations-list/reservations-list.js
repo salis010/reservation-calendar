@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { getReservations } from '../../utils/get-reservations'
 
@@ -41,4 +42,9 @@ export const ReservationsList = ({ days, setShowReservationsList }) => {
             <Button onClick={setShowReservationsList} >Close</Button>
         </ReservationsListWrapper>
     )
+}
+
+ReservationsList.propTypes = {
+    days: PropTypes.array.isRequired,
+    setShowReservationsList: PropTypes.func.isRequired,
 }

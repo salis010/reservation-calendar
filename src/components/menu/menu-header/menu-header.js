@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import close from '../../../images/close.png'
 
@@ -18,3 +19,7 @@ export const MenuHeader = ({ setShowMenu }) =>
     <MenuHeaderWrapper>
         <Img onClick={() => setShowMenu()} src={close} alt='Close' />
     </MenuHeaderWrapper>
+
+MenuHeader.propTypes = {
+    setShowMenu: PropTypes.func.isRequired,
+}

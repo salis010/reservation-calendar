@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { MenuItem } from './menu-item/index'
 import { MenuHeader } from './menu-header/index'
@@ -25,3 +26,7 @@ export const MenuTab = ({ menuItems }) =>
             <MenuItem key={menuItems.id} menuItem={menuItems} /> 
         )}
     </MenuTabWrapper>
+
+MenuTab.propTypes = {
+    menuItems: PropTypes.array.isRequired,
+}
