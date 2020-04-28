@@ -1,2 +1,1 @@
-- make responsive
-- Cypress
+Finalize README.md

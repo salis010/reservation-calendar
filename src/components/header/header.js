@@ -9,8 +9,12 @@ const HeaderWrapper = styled.header`
 `
 
 const Img = styled.img`
-    margin: 1rem;
+    margin: 0.3rem;
     cursor: pointer;
+
+    @media only screen and (min-width: ${props => props.theme.breakpoint}) {
+        margin: 1rem;
+    }
 `
 
 export const Header = ({ setShowMenu }) => 

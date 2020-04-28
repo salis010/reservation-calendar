@@ -6,11 +6,15 @@ import styled from 'styled-components'
 const DayWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    height: ${props => props.theme.dimensions.cellHeight};
+    height: ${props => props.theme.dimensions.cellHeightMobile};
     background-color: ${props => props.reserved ? props.theme.colors.secondary : 'white'};
     border-right: 1px solid ${props => props.theme.colors.secondary};
     border-bottom: 1px solid ${props => props.theme.colors.secondary};
     cursor: pointer;
+
+    @media only screen and (min-width: ${props => props.theme.breakpoint}) {
+        height: ${props => props.theme.dimensions.cellHeight};
+    }
 `
 
 const PDate = styled.p`
@@ -22,12 +26,27 @@ const PDate = styled.p`
 const Reserved = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
+    max-width: 1rem;
+    margin: 0 0 0 0.7rem;
+
+    @media only screen and (min-width: ${props => props.theme.breakpoint}) {
+        margin: 0;
+        max-width: 100%;
+    }
 `
 
 const P = styled.p`
-    font-size: 1.2rem;
-    font-style: italic;
+    font-size: 0.8rem;
+    font-style: italic;    
+    transform: rotate(-90deg);
     color: ${props => props.theme.colors.dateColor};
+
+    @media only screen and (min-width: ${props => props.theme.breakpoint}) {
+        font-size: 1.2rem;
+        writing-mode: horizontal-rl;
+        transform: rotate(0);
+    }
 `
 
 export const Day = ({ day, reserveDay }) => 
