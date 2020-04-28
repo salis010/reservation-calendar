@@ -22,6 +22,7 @@ const Button = styled.button`
     font-weight: 800;
     width: 14rem;
     height: 3.4rem;
+    margin-bottom: 2rem;
     color: white;
     background-color: ${props => props.theme.colors.secondary};
     border: none;
